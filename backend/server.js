@@ -12,7 +12,7 @@ const bookingRouter = require('./Booking/booking.route')
 const adminRouter = require('./Admin/AdminRoute')
 
 const options = {
-    origin: 'http://localhost:5173',
+    origin: process.env.FRONTEND_URL,
     method: "GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS",
     credentials: true
 }
