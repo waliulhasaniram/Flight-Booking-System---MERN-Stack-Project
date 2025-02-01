@@ -4,6 +4,8 @@
  options, and make bookings. The application should include user authentication, a flight filter engine, and a booking management system. 
  The web application also have an admin dashboard where admin can add, update, delete new flight. update booking and can also delete booking. 
 
+## clone the repo and then do these:
+
 ## commands in terminal 1
 ### cd frontend
 ### npm init
