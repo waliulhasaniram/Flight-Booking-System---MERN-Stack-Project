@@ -14,7 +14,7 @@ const adminRouter = require('./Admin/AdminRoute')
 const options = {
     origin: 'http://localhost:5173',
     method: "GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS",
-    credential: true
+    credentials: true
 }
 
 app.use(cors(options))
