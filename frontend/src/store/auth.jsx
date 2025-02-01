@@ -5,7 +5,8 @@ const FlightContext = createContext()
 
 export const FlightProvider =({children})=>{
 
-    const mainURL = 'http://localhost:3000/api'
+    const mainURL = import.meta.env.VITE_MAIN_SERVER_URL //'http://localhost:3000/api'
+    
     const [loading, setLoading] = useState(true)
     const [allFlights, setAllFlights] = useState()
     const [accessToken, setAccessToken] = useState(Cookies.get("accessToken"))
