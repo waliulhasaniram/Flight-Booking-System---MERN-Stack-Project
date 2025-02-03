@@ -1,0 +1,10 @@
+PORT = 3000
+
+DATABASE_URI = mongoDB Atlas cluster URL
+
+ACCESS_TOKEN_SECRET = qwsderfvbgtljo_123rsf@urbg@loted
+ACCESS_TOKEN_EXPIRY = 1d
+REFRESH_TOKEN_SECRET = mlokjguti8iy@tawr@_djtugmrehzaql
+REFRESH_TOKEN_EXPIRY = 10d
+
+FRONTEND_URL = http://localhost:5173
