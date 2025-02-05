@@ -22,7 +22,7 @@
 
 .App-header {
   height: 450px;
-  background-image: url('./public/plane.webp');
+  background-image: url('/plane.webp');
   background-size: cover;
   background-position: center;
 
