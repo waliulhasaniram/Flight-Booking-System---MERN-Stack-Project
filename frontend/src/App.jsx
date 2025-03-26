@@ -15,6 +15,7 @@ import AdminUpdateFlight from './navbar/pages/AdminPages/AdminUpdateFlight'
 import AdminSeeBooking from './navbar/pages/AdminPages/AdminSeeBooking'
 import AdminUpdateBooking from './navbar/pages/AdminPages/AdminUpdateBooking'
 import Error from './navbar/pages/Error'
+import Footer from './navbar/pages/Footer'
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
               <Route path='admin-update-booking/:id' element={<AdminUpdateBooking />}/>
             </Route>
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   )
