@@ -53,6 +53,7 @@
 
 .destinations {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -61,7 +62,8 @@
   border-radius: 10px;
   box-shadow: 0 0 25px rgba(100, 108, 255, 0.8);
   padding: 20px;
-  width: 30%;
+  margin: 10px;
+  width: 40%;
 }
 
 /* profile */
@@ -126,6 +128,7 @@
   flex-wrap: wrap;
   justify-content: left;
 }
+/* filter section start */
 .filter_section{
   width: 10%;
   height: fit-content;
@@ -138,6 +141,45 @@
     color: #fff;
   }
 }
+.filter_section.hide {
+  display: none;
+}
+
+/* Mobile-specific styles */
+@media screen and (max-width: 768px) {
+  h1{
+    font-size: large;
+  }
+  .filter_section {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .filter-toggle {
+    display: block;
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: #646cff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+
+/* Desktop: always show filters */
+@media screen and (min-width: 769px) {
+  .filter_section {
+    display: block !important;
+  }
+
+  .filter-toggle {
+    display: none;
+  }
+}
+/* filter section end */
+
 .flight_section{
   width: 80%;
   display: flex;
@@ -224,12 +266,14 @@
   }
   .input_div {
     margin: 20px;
-  
   }
   input{
     width: 400px;
     height: 35px;
-    font-size: 17px; 
+    font-size: 17px;
+    background-color: #fff;
+    color: black; 
+    border-radius: 10px;
   }
   textarea{
     width: 400px;
@@ -331,14 +375,14 @@
     background-color: #646cff50;
     box-shadow: 0 0 25px rgba(100, 108, 255, 0.8);
   }
-  /* filter */
-  .filter_section {
-    width: 100%;
-    height: fit-content;
-    border: 2px #646cff solid;
-    border-radius: 20px;
-    background-color: #1a1a1a;
-    padding: 30px;
-    margin: 20px;
-}
+  
+  .regImage{
+    display: none;
+  }
+  .reg_container{
+    input{
+      width: 250px;
+      border-radius: 10px;
+    }
+  }
 }
