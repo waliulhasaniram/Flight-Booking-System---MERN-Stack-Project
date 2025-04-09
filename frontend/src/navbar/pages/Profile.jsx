@@ -85,7 +85,7 @@ const Profile =()=>{
         </div>
 
     {/*update user info  */}
-        <div className="profileDiv">
+        <div className="reg_container">
             <form onSubmit={handelSubmit}>
                 <h2 style={{textAlign:"center"}}>you can update your data here</h2>
 
