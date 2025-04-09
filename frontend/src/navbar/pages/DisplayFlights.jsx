@@ -99,6 +99,9 @@ const DisplayFlight =()=>{
         getFilterFlight();
     }
 
+    // filter section toggle
+    const [showFilters, setShowFilters] = useState(false);
+
     return <>
     
     <div className="pagination">
@@ -126,7 +129,11 @@ const DisplayFlight =()=>{
         </div>
         <h2>Search your flight useing filter</h2>
         <div className="product_page">
-            <div className="filter_section">
+            <button className="filter-toggle" onClick={() => setShowFilters(prev => !prev)}>
+            &#x1F50D; Filter
+            </button>
+
+            <div className={`filter_section ${showFilters ? 'show' : 'hide'}`}>
 
                 <h3>Airlines</h3>
                     {Array.isArray(fliterAirline) && fliterAirline.map((curElem, index)=>{
