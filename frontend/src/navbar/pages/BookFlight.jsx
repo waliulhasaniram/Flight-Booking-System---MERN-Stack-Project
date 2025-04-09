@@ -54,7 +54,7 @@ const BookFlight =()=>{
             <h3>Date: {date}</h3>
         </div>
 
-        <div className="regForm">
+        <div className="reg_container">
             <form onSubmit={handelSubmit}>
                 <h2>Fill the number of seats and book</h2>
                 <div className="input_div">
